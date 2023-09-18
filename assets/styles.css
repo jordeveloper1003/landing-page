@@ -34,6 +34,8 @@ body {
   --font-black: 800;
 
   --font-sm: 14px;
+  --font-sd: 18px;
+  --font-md: 32px;
   --font-xl: 48px;
 }
 
@@ -61,6 +63,9 @@ body {
 .logo {
   height: 100%;
 }
+img.logo {
+  margin-top: 1%;
+}
 
 .navbar,
 .navbar-list {
@@ -87,3 +92,109 @@ body {
   font-weight: var(--font-semibold);
   color: var(--text-white);
 }
+
+/*  ================== MAIN ==================*/
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Hero */
+#hero {
+  margin-top: 65px;
+  padding: 70px 0;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  width: 50%;
+}
+
+.hero-info h1 {
+  font-size: var(--font-xl);
+  font-weight: var(--font-black);
+  color: var(--text-white);
+  min-width: 500px;
+  width: 80%;
+}
+
+.hero-info p {
+  font-size: var(--font-sm);
+  width: 70%;
+  color: var(--text-gray);
+}
+
+.hero-info p > span {
+  font-weight: var(--font-black);
+}
+
+.btn {
+  font-size: var(--font-sm);
+  color: var(--text-white);
+  background-color: var(--primary);
+  padding: 8px 20px;
+  border-radius: 8px;
+}
+
+.btn-light {
+  font-size: var(--font-sm);
+  color: var(--primary);
+  background-color: var(--text-white);
+  padding: 8px 20px;
+  border-radius: 8px;
+}
+
+.hero-img {
+  background: var(--secondary);
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  width: 500px;
+}
+
+.hero-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+/*  ================== about ==================*/
+#about {
+  padding: 70px 0;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+
+#about h2 {
+  font-size: var(--font-md);
+  font-weight: var(--font-black);
+}
+
+#about p{
+  width: 70%;
+}
+
+
+
+
+
