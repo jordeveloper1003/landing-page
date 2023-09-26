@@ -173,7 +173,6 @@ main {
   align-items: center;
 }
 
-
 /*  ================== about ==================*/
 #about {
   padding: 70px 0;
@@ -190,11 +189,59 @@ main {
   font-weight: var(--font-black);
 }
 
-#about p{
+#about p {
   width: 70%;
 }
 
+/*  ================== INFO ==================*/
+#info {
+  padding: 70px 0;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
 
+#info h2 {
+  font-size: var(--font-md);
+  font-weight: var(--font-black);
+}
 
+.info-cards-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
 
+.info-card {
+  text-align: center;
+  background: var(--secondary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: baseline;
+  gap: 20px;
+  border-radius: 15px;
+  padding: 40px 30px;
+  max-width: 354px;
+  height: 326px;
+}
 
+.info-card img {
+  width: 50px;
+}
+
+.info-card h3 {
+  font-weight: var(--font-semibold);
+  font-size: var(--font-sd);
+}
+
+.info-card p {
+  font-size: var(--font-sm);
+  font-weight: var(--font-light);
+  color: var(--text-gray);
+}
